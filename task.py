@@ -1,10 +1,41 @@
-print("Welcome to the tip calculator!")
-bill = float(input("What was the total bill? $"))
-tip = int(input("What percentage tip would you like to give? 10 12 15 "))
-people = int(input("How many people to split the bill? "))
-tip_percentage= tip/100
-total_tip=bill*tip_percentage
-total_bill=bill+total_tip
-Each_person_bill=total_bill/people
-final_amount=round(Each_person_bill,2)
-print(f"Each person should pay{final_amount}")
+print(r'''
+*******************************************************************************
+          |                   |                  |                     |
+ _________|________________.=""_;=.______________|_____________________|_______
+|                   |  ,-"_,=""     `"=.|                  |
+|___________________|__"=._o`"-._        `"=.______________|___________________
+          |                `"=._o`"=._      _`"=._                     |
+ _________|_____________________:=._o "=._."_.-="'"=.__________________|_______
+|                   |    __.--" , ; `"=._o." ,-"""-._ ".   |
+|___________________|_._"  ,. .` ` `` ,  `"-._"-._   ". '__|___________________
+          |           |o`"=._` , "` `; .". ,  "-._"-._; ;              |
+ _________|___________| ;`-.o`"=._; ." ` '`."\ ` . "-._ /_______________|_______
+|                   | |o ;    `"-.o`"=._``  '` " ,__.--o;   |
+|___________________|_| ;     (#) `-.o `"=.`_.--"_o.-; ;___|___________________
+____/______/______/___|o;._    "      `".o|o_.--"    ;o;____/______/______/____
+/______/______/______/_"=._o--._        ; | ;        ; ;/______/______/______/_
+____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
+/______/______/______/______/____"=._o._; | ;_.--"o.--"_/______/______/______/_
+____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
+/______/______/______/______/______/______/______/______/______/______/_____ /
+*******************************************************************************
+''')
+print("Welcome to Treasure Island.")
+print("Your mission is to find the treasure.")
+choice=input('You\'re at a crossroad , where doyou want to go? type "left" or "right": ')
+
+if choice == "left":
+    option=input("you've come to a lake .there is an island  in the middle  of the lake.Type wait to wait for a boat or Swim: ")
+    if option=="wait":
+        New=input("Which door wii you Go? RED, Blue , Yellow : ")
+        if New=="Yellow":
+            print("You Win!")
+        elif New=="Red":
+            print("Game Over")
+        else:
+            print("Game Over")
+
+    elif choice=="Swim":
+        print("Game Over")
+elif choice == "Right":
+    print("You fell in hole.game over")
